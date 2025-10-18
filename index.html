@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+    
+
+    <style>
+        body{
+        margin : 0;
+        font-family : sans-serif;
+        }
+        nav {
+            background-color: rgb(33, 10, 48);
+            padding : 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: rgb(255, 187, 0);
+            text-decoration: none;
+            font-weight:bold;
+            
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            
+        }
+
+
+
+        .moving-image {
+      width: 1000px;
+      animation: move-left-right 4s infinite alternate ease-in-out;
+    }
+    @keyframes move-left-right {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(100px); }
+    }
+    </style>
+    </head>
+<body>
+        <nav>
+            <a href="index.html"> HOME</a> |
+            <a href="page1.html"> ABOUT ME</a> |
+            
+        </nav>
+        <img src="ku.jpg" alt="ภาพขยับได้" class="moving-image" style="display: block; margin: 0 auto;" >
+    </body>
+
+
+</html>
